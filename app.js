@@ -2,9 +2,9 @@ const { ObjectId } = require('mongodb')
 const express = require('express')
 const { MongoClient } = require('mongodb')
 const cors = require('cors')
-const url = "mongodb://localhost:27017/"
+const url = "mongodb+srv://priyansh_patel:Priyanshpatel@0210@project.hdbczkw.mongodb.net"
 const jwt = require('jsonwebtoken')
-const port = 8080
+const port = process.env.PORT || 8080;
 const app = express()
 
 const SECRET_KEY = 'priyansh1017'
